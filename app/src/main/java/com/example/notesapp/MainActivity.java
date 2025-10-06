@@ -1,5 +1,6 @@
 package com.example.notesapp;
 
+import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.MenuItem;
@@ -79,6 +80,7 @@ public class MainActivity extends AppCompatActivity {
         noteAdapter.stopListening();
     }
 
+    @SuppressLint("NotifyDataSetChanged")
     @Override
     protected void onResume() {
         super.onResume();
